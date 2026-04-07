@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+## [0.1.1] - 2026-04-07
+
+### Fixed
+- **iOS & macOS Structure**: Fixed incorrect path mappings in `.podspec` files that caused "Module not found" errors. Native classes are now correctly located within the `vosk_flutter_service/Classes` subfolder as per the repository structure.
+- Synchronized version across `pubspec.yaml` and platform `podspec` files.
+
 ## [0.1.0] - 2026-03-15
 
 ### Added
