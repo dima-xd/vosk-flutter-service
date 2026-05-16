@@ -49,7 +49,7 @@ set(vosk_flutter_bundled_libraries
 #message ("FLUTTER_ROOT is $ENV{FLUTTER_ROOT}")
 
 # Install VOSK binaries.
-execute_process(COMMAND "$ENV{FLUTTER_ROOT}/bin/flutter" "pub" "run" "vosk_flutter" "install" "-t" "linux"
+execute_process(COMMAND "$ENV{FLUTTER_ROOT}/bin/flutter" "pub" "run" "vosk_flutter_fixed" "install" "-t" "linux"
         OUTPUT_VARIABLE output
         RESULT_VARIABLE result
         COMMAND_ERROR_IS_FATAL ANY
