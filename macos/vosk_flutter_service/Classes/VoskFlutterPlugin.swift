@@ -3,7 +3,7 @@ import Foundation
 
 public class VoskFlutterPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
-    let channel = FlutterMethodChannel(name: "vosk_flutter_service", binaryMessenger: registrar.messenger)
+    let channel = FlutterMethodChannel(name: "vosk_flutter_fixed", binaryMessenger: registrar.messenger)
     let instance = VoskFlutterPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }

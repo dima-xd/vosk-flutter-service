@@ -7,13 +7,13 @@
 #include "generated_plugin_registrant.h"
 
 #include <record_linux/record_linux_plugin.h>
-#include <vosk_flutter_service/vosk_flutter_plugin.h>
+#include <vosk_flutter_fixed/vosk_flutter_plugin.h>
 
 void fl_register_plugins(FlPluginRegistry* registry) {
   g_autoptr(FlPluginRegistrar) record_linux_registrar =
       fl_plugin_registry_get_registrar_for_plugin(registry, "RecordLinuxPlugin");
   record_linux_plugin_register_with_registrar(record_linux_registrar);
-  g_autoptr(FlPluginRegistrar) vosk_flutter_service_registrar =
+  g_autoptr(FlPluginRegistrar) vosk_flutter_fixed_registrar =
       fl_plugin_registry_get_registrar_for_plugin(registry, "VoskFlutterPlugin");
-  vosk_flutter_plugin_register_with_registrar(vosk_flutter_service_registrar);
+  vosk_flutter_plugin_register_with_registrar(vosk_flutter_fixed_registrar);
 }

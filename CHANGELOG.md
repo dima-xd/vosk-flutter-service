@@ -10,7 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.1] - 2026-04-07
 
 ### Fixed
-- **iOS & macOS Structure**: Fixed incorrect path mappings in `.podspec` files that caused "Module not found" errors. Native classes are now correctly located within the `vosk_flutter_service/Classes` subfolder as per the repository structure.
+- **iOS & macOS Structure**: Fixed incorrect path mappings in `.podspec` files that caused "Module not found" errors. Native classes are now correctly located within the `vosk_flutter_fixed/Classes` subfolder as per the repository structure.
 - Synchronized version across `pubspec.yaml` and platform `podspec` files.
 
 ## [0.1.0] - 2026-03-15
@@ -21,8 +21,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   `path_provider`, `permission_handler`), making the package analyzable and
   functional on Web and WASM targets.
 - **Swift Package Manager (SPM) support**: Added `Package.swift` manifests for
-  both iOS (`ios/vosk_flutter_service/Package.swift`) and macOS
-  (`macos/vosk_flutter_service/Package.swift`).
+  both iOS (`ios/vosk_flutter_fixed/Package.swift`) and macOS
+  (`macos/vosk_flutter_fixed/Package.swift`).
 - Stub files for `dart:ffi`, `dart:io`, `archive`, `path_provider`, and
   `permission_handler` under `lib/src/stubs/` to enable cross-platform analysis.
 - `lib/src/ffi_provider.dart` as a single re-export point for FFI libraries,
@@ -57,7 +57,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.5] - 2026-01-22
 
 ### Fixed
-- Fixed CLI executable name to match package name (`vosk_flutter_service`).
+- Fixed CLI executable name to match package name (`vosk_flutter_fixed`).
 - Updated internal package name constants in CLI tool.
 
 ## [0.0.4] - 2026-01-22
@@ -87,7 +87,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.1] - 2026-01-05
 
 ### Changed
-- **BREAKING**: Renamed package to `vosk_flutter_service`.
+- **BREAKING**: Renamed package to `vosk_flutter_fixed`.
 - Migrated Android build to Kotlin DSL.
 - Updated `record` dependency to v6 in example app.
 - Enforced strict type safety (0 analysis issues).

@@ -1,9 +1,9 @@
 #
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html.
-# Run `pod lib lint vosk_flutter_service.podspec` to validate before publishing.
+# Run `pod lib lint vosk_flutter_fixed.podspec` to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'vosk_flutter_service'
+  s.name             = 'vosk_flutter_fixed'
   s.version          = '0.1.1'
   s.summary          = 'Flutter plugin for offline speech recognition using the Vosk speech recognition toolkit.'
   s.description      = <<-DESC
@@ -14,7 +14,7 @@ Flutter plugin for offline speech recognition using the Vosk speech recognition 
   s.author           = { 'Dhia Bechattaoui' => 'dhia@bechattaoui.dev' }
 
   s.source           = { :path => '.' }
-  s.source_files     = 'vosk_flutter_service/Classes/**/*'
+  s.source_files     = 'vosk_flutter_fixed/Classes/**/*'
   s.dependency 'FlutterMacOS'
 
   s.platform = :osx, '10.14'

@@ -16,7 +16,7 @@ import 'target_os_type.dart';
 Future<void> main(final List<String> arguments) async {
   try {
     final runner = CommandRunner<void>(
-      'dart run vosk_flutter_service',
+      'dart run vosk_flutter_fixed',
       'Vosk CLI for loading native libraries',
     )..addCommand(_InstallCommand());
     await runner.run(arguments);
@@ -36,7 +36,7 @@ class _InstallCommand extends Command<void> {
 
   static const libVersion = '0.3.45';
   static const versionFileName = 'vosk_version.txt';
-  static const packageName = 'vosk_flutter_service';
+  static const packageName = 'vosk_flutter_fixed';
 
   @override
   final description =

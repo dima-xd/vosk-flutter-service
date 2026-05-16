@@ -12,7 +12,7 @@ class VoskFlutterPlugin {
   /// Registers the plugin with the [registrar].
   static void registerWith(final Registrar registrar) {
     final channel = MethodChannel(
-      'vosk_flutter_service',
+      'vosk_flutter_fixed',
       const StandardMethodCodec(),
       registrar,
     );
@@ -30,7 +30,7 @@ class VoskFlutterPlugin {
         throw PlatformException(
           code: 'Unimplemented',
           details:
-              "vosk_flutter_service for web doesn't implement "
+              "vosk_flutter_fixed for web doesn't implement "
               "'${call.method}'",
         );
     }

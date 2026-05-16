@@ -25,7 +25,7 @@ Native binaries are included in the package. No additional steps are required.
 Run the following command in your project root to download and install the native binaries:
 
 ```bash
-dart run vosk_flutter_service install -t <platform>
+dart run vosk_flutter_fixed install -t <platform>
 ```
 
 Replace `<platform>` with `ios`, `macos`, `linux`, or `windows`.
