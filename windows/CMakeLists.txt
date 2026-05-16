@@ -10,7 +10,7 @@ project(${PROJECT_NAME} LANGUAGES CXX)
 
 # This value is used when generating builds using this plugin, so it must
 # not be changed
-set(PLUGIN_NAME "vosk_flutter_plugin")
+set(PLUGIN_NAME "vosk_flutter_fixed_plugin")
 
 # Define the plugin library target. Its name must not be changed (see comment
 # on PLUGIN_NAME above).
@@ -37,11 +37,14 @@ target_link_libraries(${PLUGIN_NAME} PRIVATE flutter flutter_wrapper_plugin)
 # List of absolute paths to libraries that should be bundled with the plugin.
 # This list could contain prebuilt libraries, or libraries created by an
 # external build triggered from this build file.
-set(vosk_flutter_bundled_libraries
-  "${CMAKE_CURRENT_SOURCE_DIR}/libs/libvosk.dll"
-  "${CMAKE_CURRENT_SOURCE_DIR}/libs/libgcc_s_seh-1.dll"
-  "${CMAKE_CURRENT_SOURCE_DIR}/libs/libstdc++-6.dll"
-  "${CMAKE_CURRENT_SOURCE_DIR}/libs/libwinpthread-1.dll"
+file(GLOB VOSK_DLL_DIR "${CMAKE_CURRENT_SOURCE_DIR}/libs/vosk-win64-*")
+list(GET VOSK_DLL_DIR 0 VOSK_DLL_PATH)
+
+set(vosk_flutter_fixed_bundled_libraries
+  "${VOSK_DLL_PATH}/libvosk.dll"
+  "${VOSK_DLL_PATH}/libgcc_s_seh-1.dll"
+  "${VOSK_DLL_PATH}/libstdc++-6.dll"
+  "${VOSK_DLL_PATH}/libwinpthread-1.dll"
   PARENT_SCOPE
 )
 

@@ -1,4 +1,4 @@
-#include "include/vosk_flutter/vosk_flutter_plugin.h"
+#include "include/vosk_flutter_fixed/vosk_flutter_plugin.h"
 
 // This must be included before many other Windows headers.
 #include <windows.h>
